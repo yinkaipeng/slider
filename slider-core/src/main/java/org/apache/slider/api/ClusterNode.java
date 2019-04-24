@@ -20,12 +20,12 @@ package org.apache.slider.api;
 
 import org.apache.hadoop.yarn.api.records.ContainerId;
 import org.apache.slider.api.proto.Messages;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

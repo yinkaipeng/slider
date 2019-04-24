@@ -20,8 +20,8 @@ import org.apache.slider.server.appmaster.web.WebAppApi;
 import org.apache.slider.server.services.security.SignCertResponse;
 import org.apache.slider.server.services.security.SignMessage;
 import org.apache.slider.server.appmaster.web.rest.AbstractSliderResource;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

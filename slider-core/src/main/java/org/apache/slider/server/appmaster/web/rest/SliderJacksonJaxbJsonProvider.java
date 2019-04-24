@@ -21,11 +21,11 @@ package org.apache.slider.server.appmaster.web.rest;
 import com.google.inject.Singleton;
 import org.apache.hadoop.classification.InterfaceAudience.Private;
 import org.apache.hadoop.classification.InterfaceStability.Unstable;
-import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
-import org.codehaus.jackson.map.AnnotationIntrospector;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.introspect.JacksonAnnotationIntrospector;
-import org.codehaus.jackson.xc.JaxbAnnotationIntrospector;
+import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
+import com.fasterxml.jackson.databind.AnnotationIntrospector;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector;
+import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.ext.Provider;
@@ -47,7 +47,7 @@ public class SliderJacksonJaxbJsonProvider extends JacksonJaxbJsonProvider {
   @Override
   public ObjectMapper locateMapper(Class<?> type, MediaType mediaType) {
     ObjectMapper mapper = super.locateMapper(type, mediaType);
-    AnnotationIntrospector introspector = new AnnotationIntrospector.Pair(
+    AnnotationIntrospector introspector = AnnotationIntrospector.pair(
         new JaxbAnnotationIntrospector(),
         new JacksonAnnotationIntrospector()
     );

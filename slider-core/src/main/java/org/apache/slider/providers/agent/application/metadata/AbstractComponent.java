@@ -16,10 +16,11 @@
  */
 package org.apache.slider.providers.agent.application.metadata;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  *  Component defined in master package metainfo.json

@@ -20,8 +20,8 @@ package org.apache.slider.api.types;
 
 import org.apache.slider.api.StatusKeys;
 import org.apache.slider.server.appmaster.state.RoleStatus;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.util.HashMap;
 import java.util.List;

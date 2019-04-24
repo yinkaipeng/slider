@@ -26,14 +26,14 @@ import java.util.Set;
 
 import org.apache.hadoop.yarn.api.records.FinalApplicationStatus;
 import org.apache.slider.api.SliderExitReason;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -121,7 +121,7 @@ public class ApplicationDiagnostics {
   public String toJsonString()
       throws IOException, JsonGenerationException, JsonMappingException {
     ObjectMapper mapper = new ObjectMapper();
-    mapper.configure(SerializationConfig.Feature.INDENT_OUTPUT, true);
+    mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
     return mapper.writeValueAsString(this);
   }
 

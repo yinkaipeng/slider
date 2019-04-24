@@ -47,7 +47,7 @@ import org.apache.slider.core.exceptions.WaitTimeoutException;
 import org.apache.slider.core.persist.ConfTreeSerDeser;
 import org.apache.slider.server.services.security.SecurityStore;
 import org.apache.slider.server.services.security.SignCertResponse;
-import org.codehaus.jackson.JsonParseException;
+import com.fasterxml.jackson.core.JsonParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

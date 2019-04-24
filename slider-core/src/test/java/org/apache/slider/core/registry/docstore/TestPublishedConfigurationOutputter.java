@@ -21,7 +21,7 @@ import com.google.common.base.Charsets;
 import org.apache.commons.io.FileUtils;
 import org.apache.hadoop.fs.Path;
 import org.apache.slider.common.tools.SliderFileSystem;
-import org.codehaus.jackson.map.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

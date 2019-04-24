@@ -19,9 +19,9 @@
 package org.apache.slider.core.persist;
 
 import org.apache.slider.core.launch.SerializedApplicationReport;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 
 import java.io.IOException;
 

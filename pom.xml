@@ -153,7 +153,7 @@
     <gson.version>2.2.2</gson.version>
     <guice.version>3.0</guice.version>
 
-    <jackson.version>1.9.13</jackson.version>
+    <jackson.version>2.9.8</jackson.version>
     <jcommander.version>1.30</jcommander.version>
 
     <jetty-hwx.version>6.1.26.hwx</jetty-hwx.version>
@@ -1223,26 +1223,26 @@
       </dependency>
       
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-core-asl</artifactId>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
         <version>${jackson.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-mapper-asl</artifactId>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
         <version>${jackson.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-xc</artifactId>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-json-provider</artifactId>
         <version>${jackson.version}</version>
       </dependency>
       
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-jaxrs</artifactId>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-base</artifactId>
         <version>${jackson.version}</version>
       </dependency>
       

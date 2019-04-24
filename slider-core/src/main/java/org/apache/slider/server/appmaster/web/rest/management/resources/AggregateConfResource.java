@@ -17,9 +17,9 @@
 package org.apache.slider.server.appmaster.web.rest.management.resources;
 
 import org.apache.slider.core.conf.AggregateConf;
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.ws.rs.core.UriBuilder;
 import java.util.HashMap;
