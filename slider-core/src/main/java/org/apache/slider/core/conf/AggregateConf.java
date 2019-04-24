@@ -24,9 +24,9 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.slider.common.SliderKeys;
 import org.apache.slider.core.exceptions.BadConfigException;
 import org.apache.slider.server.services.security.SecurityUtils;
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 /**
  * Aggregate Configuration.

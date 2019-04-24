@@ -19,8 +19,8 @@
 package org.apache.slider.server.appmaster.web.rest.registry;
 
 import org.apache.hadoop.registry.client.types.ServiceRecord;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.util.List;
 

@@ -22,9 +22,9 @@ import org.apache.slider.providers.agent.application.metadata.DockerContainerInp
 import org.apache.slider.providers.agent.application.metadata.DockerContainerMount;
 import org.apache.slider.providers.agent.application.metadata.DockerContainerPort;
 import org.apache.slider.providers.agent.application.metadata.Metainfo;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

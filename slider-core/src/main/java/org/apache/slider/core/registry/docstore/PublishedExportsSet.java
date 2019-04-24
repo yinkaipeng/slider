@@ -20,8 +20,8 @@ package org.apache.slider.core.registry.docstore;
 
 import org.apache.slider.server.appmaster.web.rest.RestPaths;
 import org.apache.slider.server.services.utility.PatternValidator;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.util.HashMap;
 import java.util.Locale;

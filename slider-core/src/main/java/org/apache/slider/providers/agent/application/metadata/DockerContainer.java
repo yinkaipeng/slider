@@ -19,7 +19,7 @@
 package org.apache.slider.providers.agent.application.metadata;
 
 import org.apache.slider.core.exceptions.SliderException;
-import org.codehaus.jackson.annotate.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
