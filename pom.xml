@@ -154,6 +154,7 @@
     <guice.version>3.0</guice.version>
 
     <jackson.version>2.9.8</jackson.version>
+    <jackson-xc.version>1.9.3</jackson-xc.version>
     <jcommander.version>1.30</jcommander.version>
 
     <jetty-hwx.version>6.1.26.hwx</jetty-hwx.version>
@@ -525,6 +526,12 @@
         <artifactId>groovy-all</artifactId>
         <classifier>indy</classifier>
         <version>${groovy.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-xc</artifactId>
+        <version>${jackson-xc.version}</version>
       </dependency>
 
       <dependency>
@@ -1317,18 +1324,6 @@
         <groupId>com.sun.jersey.contribs</groupId>
         <artifactId>jersey-apache-client</artifactId>
         <version>${jersey.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.sun.jersey</groupId>
-        <artifactId>jersey-json</artifactId>
-        <version>${jersey.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>stax</groupId>
-            <artifactId>stax-api</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
 
       <dependency>
